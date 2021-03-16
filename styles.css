@@ -134,6 +134,7 @@ li {
 .list{
   width: 500px;
   margin: 0 auto;
+  padding-left: 0;
 }
 
 .list-item {
