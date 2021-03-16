@@ -4,4 +4,4 @@
 Анимация диграммы выполнена при помощи keyframe.
 
 ## Деплой 
-Демо доступно по ссылке https://github.com/Diman142/Diagram/settings
+Демо доступно по ссылке https://diman142.github.io/Diagram/
