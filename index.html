@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <svg width="100%" height="100%" viewBox="0 0 42 42" class="diagram">
+      <circle class="donut-hole" cx="21" cy="21" r="15.9" fill="#fff"></circle>
+      <circle class="donut-ring" cx="21" cy="21" r="15.9" fill="transparent" stroke="#fff" stroke-width="1"></circle>
+      <circle class="donut-segment" cx="21" cy="21" r="15.9" fill="transparent" stroke="#b8b8b8" stroke-width="1" stroke-dasharray="85 15"
+        stroke-dashoffset="18"></circle>
+      <circle class="diagram-yellow animate" cx="21" cy="21" r="15.9" fill="transparent" stroke="yellow" stroke-width="1" stroke-dasharray="33 67"
+        stroke-dashoffset="18"></circle>
+      <circle class="diagram-green animate" cx="21" cy="21" r="15.9" fill="transparent" stroke="green" stroke-width="1" stroke-dasharray="30 70"
+        stroke-dashoffset="90"></circle>
+    </svg>
+
+    <g class="diagram-text">
+      <g x="0" y="0" class="diagram-persent">
+        <text class="diagram-persent__bigText">72</text>
+        <g class="diagram-persent-small">
+          <text class="diagram-persent__small__symbol">%</text>
+          <text class="diagram-persent-small__text">.7</text>
+        </g>
+      </g>
+      <text x="0" y="0" class="diargram-loyalty">
+        Лояльность
+      </text>
+      <text x="0" y="0" class="diargram-level">
+        Ниже среднего
+      </text>
+      <text x="0" y="0" class="diargram-note">
+        По отрасли FMCG. <br> Значения слева от медианы 52.0% - 83.1%
+      </text>
+      <text x="0" y="0" class="diargram-progress">
+        3.1%
+      </text>
+    </g>
+
+
+  </div>
+
+
+  <ul class="list">
+
+    <li class="list-item">
+      <span class="list-item__name">Промоутеры</span>
+      <div class="list-item__wrap">
+        <span class="list-item__persent">32.0%</span>
+        <span class="list-item__number">81</span>
+      </div>
+      <div class="list-item-rect">
+        <span class="list-item-rect__bg list-item-rect__bg-green"></span>
+        <span class="list-item-rect__text">+1.2%</span>
+      </div>
+    </li>
+
+    <li class="list-item">
+      <span class="list-item__name">Скептики</span>
+      <div class="list-item__wrap">
+        <span class="list-item__persent">39.1%</span>
+        <span class="list-item__number">10</span>
+      </div>
+      <div class="list-item-rect">
+        <span class="list-item-rect__bg list-item-rect__bg-yellow"></span>
+        <span class="list-item-rect__text">+4.8%</span>
+      </div>
+    </li>
+
+
+    <li class="list-item">
+      <span class="list-item__name">Критики</span>
+      <div class="list-item__wrap">
+        <span class="list-item__persent">79.8%</span>
+        <span class="list-item__number">7</span>
+      </div>
+      <div class="list-item-rect list-item-rect_red">
+        <span class="list-item-rect__bg list-item-rect__bg-red"></span>
+        <span class="list-item-rect__text">-9.7%</span>
+      </div>
+    </li>
+
+  </ul>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

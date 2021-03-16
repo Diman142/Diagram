@@ -1,0 +1,271 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.diagram {
+  position: relative;
+}
+
+.wrapper::after{
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  display: inline-block;
+  width: 50px;
+  height: 70px;
+  background-image: url('./icons/loyalty.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.diagram-text{
+  position: absolute;
+  top: 27%;
+  left: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+
+.diagram-persent {
+  display: flex;
+  line-height: 1;
+}
+
+.diagram-persent__bigText{
+  font-size: 72px;
+}
+
+
+.diagram-persent-small{
+  padding-top: 6px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.diagram-persent-small__text{
+  font-size: 36px;
+}
+
+.diagram-persent__small__symbol{
+  padding-left: 8px;
+  font-size: 24px;
+  color: #b8b8b8;
+}
+
+.diargram-loyalty {
+  margin-bottom: 5px;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.diargram-level{
+  color: rgb(255, 217, 0);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.diargram-note {
+  width: 70%;
+  text-align: center;
+  color: #b8b8b8;
+  margin-bottom: 5px;
+}
+
+
+.diargram-progress{
+  padding-left: 32px;
+  position: relative;
+  font-size: 24px;
+  color: green;
+}
+
+
+.diargram-progress::before {
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border: 10px solid transparent;
+  border-bottom: 10px solid green;
+}
+
+
+.animate {
+  animation-name: render;
+  animation-duration: 1.5s;
+}
+
+@keyframes render {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.list{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.list-item {
+  display: flex;
+  justify-content:  center;
+}
+
+.list-item:not(:last-child){
+  margin-bottom: 15px;
+}
+
+
+
+.list-item__name{
+  width: 110px;
+  font-size: 16px;
+  margin-right: 12px;
+  font-weight: 600;
+}
+
+.list-item__wrap{
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.list-item__persent{
+  font-size: 16px;
+}
+
+.list-item__number {
+  position: relative;
+  font-size: 16px;
+  color: #b8b8b8;
+  padding-left: 5px;
+
+}
+
+.list-item__number::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 23px;
+  height: 16px;
+  background-image: url('./icons/human_full.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 6px;
+}
+
+
+.list-item-rect{
+  position: relative;
+  border: 1px solid #b8b8b8;
+  height: 38px;
+  width: 150px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+
+
+.list-item-rect__text{
+  font-size: 16px;
+}
+
+
+.list-item-rect__bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 28px;
+  border-radius: 5px 0 0 0;
+}
+
+.list-item-rect__bg-red{
+  width: 30px;
+  background-color: red;
+}
+
+
+.list-item-rect__bg-yellow{
+  width: 40px;
+  background-color: yellow;
+}
+
+
+.list-item-rect__bg-green{
+  width: 40px;
+  background-color: green;
+}
+
+.list-item-rect__bg-red::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 10px;
+  width: 15px;
+  background-color: red;
+  opacity: .5;
+  border-radius: 0 0 0 5px;
+}
+
+
+.list-item-rect__bg-yellow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 10px;
+  width: 25px;
+  background-color: yellow;
+  opacity: .5;
+  border-radius: 0 0 0 5px;
+}
+
+.list-item-rect__bg-green::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 10px;
+  width: 25px;
+  background-color: green;
+  opacity: .5;
+  border-radius: 0 0 0 5px;
+}
